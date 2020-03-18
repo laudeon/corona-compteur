@@ -10,7 +10,7 @@ const App = (function (ctx) {
 
   ctx.calcDiff = () => {
     const now = new moment()
-    const startedOn = new moment("20200316", "YYYYMMDD")
+    const startedOn = new moment("2020-03-16 12:00")
     const diff = moment.duration(now.diff(startedOn))
 
     return diff
