@@ -5,13 +5,13 @@ const App = (function (ctx) {
     while (!moment) setTimeout(ctx.start, 500)
     moment.locale("fr")
 
-    setInterval(() => ctx.updateCompteurElem(ctx.calcDiff()), 1000)
+    ctx.updateCompteurElem(ctx.calcDiff())
   }
 
   ctx.calcDiff = () => {
-    const now = new moment()
+    const endsDate = new moment("2020-05-11 12:00")
     const startedOn = new moment("2020-03-16 12:00")
-    const diff = moment.duration(now.diff(startedOn))
+    const diff = moment.duration(endsDate.diff(startedOn))
 
     return diff
   }
