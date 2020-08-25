@@ -16,7 +16,7 @@ const App = (function (ctx) {
     return diff
   }
 
-  ctx.updateCompteurElem = diff => ctx.compteurElem.innerHTML = 'Tu as été confiné⋅e pendant ' + diff.months() + ' mois et ' + diff.days() + ' jours !'
+  ctx.updateCompteurElem = diff => ctx.compteurElem.innerHTML = 'C\'est fini maintenant ! Tu as été confiné⋅e pendant ' + diff.months() + ' mois et ' + diff.days() + ' jours !'
 
   return ctx
 })({})
